@@ -7,5 +7,5 @@ Generating Images using GAN's
  
 ---
 
-## //TODO Eventually:
+## //ToDo Eventually:
  - upload images of my own face
