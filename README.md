@@ -20,8 +20,8 @@ Generating Images using GAN's
  - Labels are marked as follows:
   - Label = 1.0 indicates real images
   - Label = 0.0 indicates fake images
- - The generator uses tf.keras.layers.Conv2DTranspose (upsampling) layers to create an image from a seed of noise.
- - The seed is fed to a Dense layer and upsampled several times until the final image size of 28x28x1 is achieved.
+ - The generator uses `tf.keras.layers.Conv2DTranspose` (upsampling) layers to create an image from a seed of noise.
+ - The seed is fed to a Dense layer and upsampled several times (in our case, until the final image size of 28x28x1 is achieved).
 
 ## Build Discriminator
  - The discriminator is a basic Neural Network that is trained to perform classification task
