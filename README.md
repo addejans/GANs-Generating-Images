@@ -18,16 +18,16 @@ Generating Images using GAN's
  - The generator is trying to generate fake images that are similar to the real images (ones that comes from the training data)
  - The objective of the generator is to fool the discriminator.
  - Labels are marked as follows:
-  - Label = 1.0 indicates real images
-  - Label = 0.0 indicates fake images
+   - Label = 1.0 indicates real images
+   - Label = 0.0 indicates fake images
  - The generator uses `tf.keras.layers.Conv2DTranspose` (upsampling) layers to create an image from a seed of noise.
  - The seed is fed to a Dense layer and upsampled several times (in our case, until the final image size of 28x28x1 is achieved).
 
 ## Build Discriminator
  - The discriminator is a basic Neural Network that is trained to perform classification task
  - The discriminator is trained to do the following:
-  - Output 0 (probability = 0%) when the input image is fake
-  - Output 1 (probability = 100%) when the input image is real
+   - Output 0 (probability = 0%) when the input image is fake
+   - Output 1 (probability = 100%) when the input image is real
 
 ---
 
